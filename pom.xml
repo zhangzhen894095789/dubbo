@@ -13,6 +13,7 @@
   </modules>
   <build>
 		<plugins>
+		<!-- 指定maven项目的jdk编译版本号 -->
         	<plugin>
         	<groupId>org.apache.maven.plugins</groupId>
         	<artifactId>maven-compiler-plugin</artifactId>

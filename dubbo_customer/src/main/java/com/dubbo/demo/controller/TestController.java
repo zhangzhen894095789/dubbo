@@ -2,6 +2,7 @@ package com.dubbo.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -20,9 +21,9 @@ public class TestController {
 		return str;
 	}
 
-	@RequestMapping("/testSay")
+	@RequestMapping("/testSay/{name}")
 	@ResponseBody
-	public String sayHello(String name){
+	public String sayHello(@PathVariable String name){
 		String str = testService.say(name);
 		return str;
 	}

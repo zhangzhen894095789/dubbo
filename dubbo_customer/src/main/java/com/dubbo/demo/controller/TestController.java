@@ -30,14 +30,14 @@ public class TestController {
 		String str = testService.say(cname);
 		return str;
 	}
-	
+	@RequestMapping("/testDubbo2")
 	@ResponseBody
 	public String sayDubbo2(){
 		String str = testService2.testSayDubbo2();
 		return str;
 	}
 
-	@RequestMapping("/testSay/{name}")
+	@RequestMapping("/testSay2/{name}")
 	@ResponseBody
 	public String sayHello2(@PathVariable("name") String cname){
 		String str = testService2.say2(cname);

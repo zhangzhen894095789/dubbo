@@ -15,5 +15,5 @@
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:reference interface="com.dubbo.demo.service.TestService" id="testService" check="false" />
 
-
+	<dubbo:reference interface="com.dubbo.demo.service.TestService2" id="testService2" check="false" />
 </beans>

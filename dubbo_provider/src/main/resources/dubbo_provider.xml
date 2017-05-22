@@ -20,4 +20,10 @@
 
 	<!-- 具体的实现bean -->
 	<bean id="testService" class="com.dubbo.demo.service.impl.TestServiceImpl" />
+	
+	<!-- 声明需要暴露的服务接口 -->
+	<dubbo:service interface="com.dubbo.demo.service.TestService2" ref="testService2" />
+
+	<!-- 具体的实现bean -->
+	<bean id="testService2" class="com.dubbo.demo.service.impl.TestServiceImpl2" />
 </beans>
